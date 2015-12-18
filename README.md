@@ -31,7 +31,7 @@ The repository contains a number of files:
 - run_analysis.R:  Single R script executing all project steps
 
 ### Analysis Plan
-Data files are presumed to be in specific subdirectories under the working directory in which the code is run.  In particular, predictors and response variables for the training segment should be in two files under ./train, and the corresponding files for the test segment should be located in ./test.
+Data files are presumed to be in specific subdirectories under the working directory where the code runs.  In particular, predictors and response variables for the training segment should be in two files under ./train, and the corresponding files for the test segment should be located in ./test.
 
 The single, run_analysis.R script proceeds according to the steps outlined in the instructions, consolidating the four data files into a "master" tidy data set, summarizing the data set according to the instructions, and exporting the resulting summary view to a tab-delimited text file.
 
