@@ -21,7 +21,7 @@ The script expects 6 input files (with paths relative to the location of the scr
 
 Layout information for the two tidy data sets produced by this project.  Each variable is presented in the same sequence in which it appears in the data set.  The variable name is followed by a brief description, below which is the variable's domain (all possible values if categorical, and the observed range if numeric).
 
-### I) gcd
+### I) gcd (step 4 output)
 
 gcd is the master tidy data set that combines the response and predictor variables from both the test and train data sets.  Descriptive activity labels have been added, and each variable (feature) name has been exploded into its component parts.
 
@@ -83,5 +83,26 @@ std: Standard deviation of the measurement (normalized)
 
 	[-1, 1]
 
-### II) Summary Data (step 5 output)
+### II) gcd_bysubact (step 5 output)
+
+This data set aggregates the master data set (gcd) by activity, segment, and subject.  A simple average is computed for each of the two value fields (mean and std).
+
+activity: The actual activity being performed by the subject when measurements were taken (6 options)
+
+	LAYING
+	SITTING
+	STANDING
+	WALKING
+	WALKING_DOWNSTAIRS
+	WALKING_UPSTAIRS
+
+segment: Identifies whether the record came from a "test" or "train" file
+
+	test		
+	train
+
+subject: Subject ID within the Segment (Segment and Subject fields are both required to identify a unique subject)
+
+	[1, 7352]
+		
 
