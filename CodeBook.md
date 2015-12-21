@@ -15,7 +15,7 @@ The script expects 6 input files (with paths relative to the location of the scr
 	5) train/x_train.txt
 	6) train/y_train.txt
 
-
+The variable names in features.txt are decomposed into six separate variables that uniquely describe a feature: domain, component, instrument, jerk.signal, magnitude, and axis.  The input data contains numerous measurements associated with each feature, but for this exercise we discard all but the mean and standard deviation (labelled "mean()" and "std()" in the feature name).  The test and train segments are appended and subsequently marked by a unique segment identifier.  The predictor variables (x) and response variables (y) are then joined by segment and subject.  The detailed feature identifiers and activity labels are then added to create the master dataset.  In the final step, the master data set is aggregated by activity, segment, and subject, and simple statistics are calculated.
 
 ## Code Book
 
