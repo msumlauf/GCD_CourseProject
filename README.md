@@ -24,11 +24,12 @@ The following instructions were provided for this project:
 	Good luck!
 
 ### Contents
-The repository contains three files:
+The repository contains four files:
 
 - README.md
 - CodeBook.md: Describes the variables in the tidy datasets and all major transformations
-- run_analysis.R:  Single R script executing all project steps
+- run_analysis.R: Single R script executing all project steps
+- gcd_bysubact.txt: Tab-delimited text file containing data produced by step 5 of run_analysis.R
 
 ### Analysis Plan
 Data files are presumed to be in specific subdirectories under the working directory where the code runs.  In particular, predictors and response variables for the training segment should be in two files under ./train, and the corresponding files for the test segment should be located in ./test.
