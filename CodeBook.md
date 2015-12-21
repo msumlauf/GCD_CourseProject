@@ -21,51 +21,62 @@ The script expects 6 input files (with paths relative to the location of the scr
 
 ### I) Master Data (step 4 output)
 
-segment: Identifies whether the record came from a "test" or "train" file. 
-		test		
-		train
+segment: Identifies whether the record came from a "test" or "train" file
+
+	test		
+	train
 
 subject: Subject ID within the Segment (Segment and Subject fields are both required to identify a unique subject)
-		[1, 7352]
+
+	[1, 7352]
 		
 activity: The actual activity being performed by the subject when measurements were taken (6 options)
-		LAYING
-		SITTING
-		STANDING
-		WALKING
-		WALKING_DOWNSTAIRS
-		WALKING_UPSTAIRS
+
+	LAYING
+	SITTING
+	STANDING
+	WALKING
+	WALKING_DOWNSTAIRS
+	WALKING_UPSTAIRS
 
 domain: A feature descriptor, indicating whether the measurement is time- or frequency-related (extracted from values in features.txt).
-		frequency
-		time
+
+	frequency
+	time
 		
 component: A feature descriptor, indicating a body or gravity measurement (extracted from values in features.txt).
-		body
-		gravity
+
+	body
+	gravity
 		
 instrument: A feature descriptor, indicating whether the measurement was taken by the accelerometer or gyroscope (extracted from values in features.txt).
-		accelerometer
-		gyroscope
+
+	accelerometer
+	gyroscope
 		
 jerk.signal: A feature descriptor, indicating whether the measurement is a jerk signal (extracted from values in features.txt).
-		no
-		yes
+
+	no
+	yes
 		
 magnitude: A feature descriptor, identifying a magnitude measurement (extracted from values in features.txt).
-		no
-		yes
+
+	no
+	yes
 		
 axis: A feature descriptor, identifying the axis of movement where applicable (extracted from values in features.txt)
-		X
-		Y
-		Z
-		NA (not applicable)
+
+	X
+	Y
+	Z
+	NA (not applicable)
 
 mean: Mean value of the measurement (normalized)
-		[-1, 1]
+
+	[-1, 1]
 		
 std: Standard deviation of the measurement (normalized)
-		[-1, 1]
+
+	[-1, 1]
 
 ### II) Summary Data (step 5 output)
