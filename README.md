@@ -35,4 +35,4 @@ Data files are presumed to be in specific subdirectories under the working direc
 
 The single, run_analysis.R script proceeds according to the steps outlined in the instructions, consolidating the four data files into a "master" tidy data set, summarizing the data set according to the instructions, and exporting the resulting summary view to a tab-delimited text file.
 
-Note that the aggregation required by the instructions may be nonsensical for the underlying data structure.  However, I am assuming that the point of the exercise is less to create meaningful output than to demonstrate the ease with which tidy tools can be applied to a tidy dataset.
+Note that the aggregation required by the instructions may be nonsensical for the underlying data structure.  However, I am assuming that the point of the exercise is less to create meaningful output than to demonstrate the ease with which tidy tools can be used to create useful views of a tidy dataset.
