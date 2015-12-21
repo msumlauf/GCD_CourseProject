@@ -24,10 +24,10 @@ The following instructions were provided for this project:
 	Good luck!
 
 ### Contents
-The repository contains a number of files:
+The repository contains three files:
 
 - README.md
-- CodeBook.md: Describes the variables and analysis plan
+- CodeBook.md: Describes the variables in the tidy datasets and all major transformations
 - run_analysis.R:  Single R script executing all project steps
 
 ### Analysis Plan
