@@ -19,7 +19,11 @@ The script expects 6 input files (with paths relative to the location of the scr
 
 ## Code Book
 
-### I) Master Data (step 4 output)
+Layout information for the two tidy data sets produced by this project.  Each variable is presented in the same sequence in which it appears in the data set.  The variable name is followed by a brief description, below which is the variable's domain (all possible values if categorical, and the observed range if numeric).
+
+### I) gcd
+
+gcd is the master tidy data set that combines the response and predictor variables from both the test and train data sets.  Descriptive activity labels have been added, and each variable (feature) name has been exploded into its component parts.
 
 segment: Identifies whether the record came from a "test" or "train" file
 
@@ -80,3 +84,4 @@ std: Standard deviation of the measurement (normalized)
 	[-1, 1]
 
 ### II) Summary Data (step 5 output)
+
